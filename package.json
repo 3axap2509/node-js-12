@@ -1,0 +1,9 @@
+{
+    "name": " cwp12",
+    "author": "3axap",
+    "dependencies": {
+        "mysql2": "^1.6.4",
+        "sequelize": "^4.41.1",
+        "tedious": "^3.0.1"
+    }
+}
