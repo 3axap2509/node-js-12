@@ -50,6 +50,7 @@ module.exports = async (db) =>
 
     return Promise.all(
       [
+        db.races.destroy({where:{}}),
         db.races.create(
             {
               name: "Человек",

@@ -2,6 +2,7 @@ module.exports = async (db) => {
 
 	return Promise.all(
 		[
+			db.heroes.destroy({where:{}}),
 			db.heroes.create({
 				name: 'Артас',
 				race_id: 1,

@@ -30,6 +30,7 @@ module.exports = async (db) => {
 
 	return Promise.all(
 		[
+			db.weapons.destroy({where:{}}),
 			db.weapons.create({
 				name: 'Грань Тьмы',
 				dps: 99,

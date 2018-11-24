@@ -89,6 +89,7 @@ PvP группы. К этим способностям относятся раз
 
     return Promise.all(
       [
+          db.classes.destroy({where:{}}),
         db.classes.create(
         {
             name: "Воин",
